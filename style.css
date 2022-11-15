@@ -1,0 +1,49 @@
+body{
+    background: linear-gradient(270deg, rgba(255, 2, 255), rgba(255, 25, 25));
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.image{
+    border-radius: 100px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #fff;
+    animation-duration: 7s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    mix-blend-mode: screen;
+}
+.name{
+    text-shadow: -1px 1px 0 #000,
+                          1px 1px 0 #000,
+                         1px -1px 0 #000,
+                        -1px -1px 0 #000;
+
+    
+    opacity: 50%;
+}
+.skills{
+    background-color: blue;
+    cursor: pointer;
+    display: block;
+    border-spacing: 2px;
+}
+.head{
+    display: block;
+}
+.skills:hover{
+    
+    background-color: gray;
+}
+@keyframes slidein {
+    from {
+      margin-left: 99%;
+      
+    }
+  
+    to {
+      margin-left: -50%;
+      
+    }
+  }
